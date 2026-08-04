@@ -32,6 +32,11 @@ app.get('/', (req, res) => {
   `)
 })
 
+app.get('/sec', function(req,res) {
+  res.sendFile(path.join(__dirname, '..', 'components', 'index.html'))
+
+})
+
 app.get('/about', function (req, res) {
   res.sendFile(path.join(__dirname, '..', 'components', 'about.htm'))
 })
